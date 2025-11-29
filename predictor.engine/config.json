@@ -1,1 +1,30 @@
+{
+  "tickers": [
+    "AAPL","NVDA","GOOGL","GOOG","MSFT","TSLA","SPY","IBM","ORCL","DVLT",
+    "DELL","PUM.DE","^GSPC","INTC","T","F","AAL","BRK-B","2222.SR"
+  ],
+  "lookback_days": 90,
+  "train_interval_days": 1,
+  "prediction_horizon": 3,
+  "dollar_per_trade": 100,
+  "model_path": "model_store/latest_model.pkl",
+
+  "market_hours": {
+    "timezone": "America/New_York",
+    "open": "09:30",
+    "close": "16:00",
+    "trade_only_during_market": true
+  },
+
+  "alpaca": {
+    "enabled": true,
+    "paper_trading": true,
+    "api_key": "YOUR_KEY",
+    "secret_key": "YOUR_SECRET",
+    "base_url": "https://paper-api.alpaca.markets"
+  },
+
+  "yahoo_fallback": true
+}
+
 
